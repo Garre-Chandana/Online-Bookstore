@@ -1,2 +1,17 @@
-# Online-Bookstore
-It is a web-based online bookstore that allows users to browse, search, and purchase books seamlessly. It provides a simple cart management system, order tracking, and a responsive design for a smooth shopping experience. The project was built using HTML, CSS, and JavaScript, focusing on clean UI and user-friendly navigation
+Online Bookstore is a simple and interactive online bookstore web application where users can browse books, manage their cart, and place orders.
+
+✨ Features
+
+🔑 User Authentication – Login and Signup system.
+
+🛒 Cart & Order Management – Add/remove books from cart, track and manage orders.
+
+📚 Book Categories – Browse and filter books by genre.
+
+📱 Responsive UI – Works across devices (desktop, tablet, mobile).
+
+💳 Checkout Flow – Smooth order placement with confirmation.
+
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript
