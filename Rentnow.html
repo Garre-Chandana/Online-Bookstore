@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent Book</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      padding: 30px;
+      color: #2c3e50;
+    }
+
+    .rent-section {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    .rent-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .rent-header h1 {
+      font-size: 36px;
+      color: #007bff;
+    }
+
+    .book-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .book-image {
+      flex: 1 1 300px;
+    }
+
+    .book-image img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .book-info {
+      flex: 2 1 500px;
+    }
+
+    .book-info h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .book-info p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .rent-options {
+      margin-top: 20px;
+    }
+
+    .rent-options label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .rent-options select,
+    .rent-options input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .rent-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .rent-button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .book-details {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="rent-section">
+    <div class="rent-header">
+      <h1>Rent This Book</h1>
+    </div>
+
+    <div class="book-details">
+      <div class="book-image">
+        <img src="images/vanished days.jpg" alt="The Vanished Days">
+      </div>
+
+      <div class="book-info">
+        <h2>The Vanished Days</h2>
+        <p>
+          A sweeping love story set against the Jacobite revolution. <br>
+          Experience historical intrigue, romance, and the resilience of love.
+        </p>
+
+        <p><strong>Publisher:</strong> Simon & Schuster UK</p>
+        <p><strong>Language:</strong> English</p>
+        <p><strong>Pages:</strong> 540</p>
+
+        <div class="rent-options">
+          <label for="duration">Choose Rent Duration</label>
+          <select id="duration">
+            <option value="7">7 Days - ₹50</option>
+            <option value="14">14 Days - ₹80</option>
+            <option value="30">30 Days - ₹120</option>
+          </select>
+
+          <label for="email">Enter Your Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+
+          <a href="checkout.html"><button class="rent-button">Rent Now</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

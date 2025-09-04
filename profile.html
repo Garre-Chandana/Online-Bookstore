@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - BMart</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+   <header>
+  <div class="header-content">
+    <div class="home1"><a href="index1.html"><button>Home</button></div></a>
+    <h1>My Account</h1>
+  </div>
+</header>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul class="navbar">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#order-history">Order History</a></li>
+            <li><a href="#wishlist">Wishlist</a></li>
+            <li><a href="#currently-reading">Currently Reading</a></li>
+            <li><a href="/logout" aria-label="Logout">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <h2>User Profile</h2>
+    <section id="profile" class="profile">
+        <div class="user">
+            <img src="images/profilelogo.png" alt="User profile picture">
+            <div class="user-details">
+                <h2>John Doe</h2>
+                <p>Email: johndoe@example.com</p>
+                <p>Phone: +91-9876543210</p>
+                <p>Membership: Premium</p>
+                <a href="profileedit.html"><button type="button" aria-label="Edit Profile">Edit Profile</button></a>
+            </div>
+        </div>
+        <div class="address-container">
+            <div class="address">
+                <h3>Address</h3>
+                <p>123, Main Street, Hyderabad, Telangana, India - 500001</p>
+            </div>
+            <a href="editadddress.html"><button type="button" aria-label="Edit Address">Edit Address</button></a>
+        </div>
+    </section>
+
+    <!-- Order History Section -->
+    <section id="order-history" class="order-history">
+        <header class="heading">
+            <h2>Order History</h2>
+        </header>
+        <br>
+        <div class="order-container">
+            <div class="order">
+                <img src="images/5 am.jpeg" alt="Cover of '5 AM Club' book">
+                <h3>The 5 AM Club</h3>
+                <p>Cost: ₹1500</p>
+                <p>Ordered On: 01-06-2025</p>
+                <p>Status: Delivered</p>
+            </div>
+            <div class="order">
+                <img src="images/my journey.jpeg" alt="Cover of 'My Journey' book">
+                <h3>My Journey</h3>
+                <p>Cost: ₹1500</p>
+                <p>Ordered On: 15-06-2025</p>
+                <p>Status: Delivered</p>
+            </div>
+            <div class="order">
+                <img src="images/homeless.jpeg" alt="Cover of 'Powerless' book">
+                <h3>Powerless</h3>
+                <p>Cost: ₹1500</p>
+                <p>Ordered On: 20-06-2025</p>
+                <p>Status: Not Delivered</p>
+            </div>
+            <div class="order">
+                <img src="images/wings of fire.jpeg" alt="Cover of 'Wings of Fire' book">
+                <h3>Wings Of Fire</h3>
+                <p>Cost: ₹1500</p>
+                <p>Ordered On: 28-06-2025</p>
+                <p>Status: Not Delivered</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishlist Section -->
+    <section id="wishlist" class="wishlist">
+        <header class="heading">
+            <h2>Wishlist</h2>
+        </header>
+        <br>
+        <div class="wishlist-container">
+            <div class="box">
+                <img src="images/rich dad.jpeg" alt="Cover of BOOK1">
+                <h3>BOOK1</h3>
+                <p>By: Author Name</p>
+                <p>Cost: ₹1000</p>
+                <a href="checkout.html" class="btn" aria-label="Order BOOK1">Order Now</a>
+                <a href="Rentnow.html" class="btn" aria-label="Rent BOOK1">Rent Now</a>
+            </div>
+            <div class="box">
+                <img src="images/vanished days.jpg" alt="Cover of BOOK2">
+                <h3>BOOK2</h3>
+                <p>By: Author Name</p>
+                <p>Cost: ₹1000</p>
+                <a href="checkout.html" class="btn" aria-label="Order BOOK2">Order Now</a>
+                <a href="Rentnow.html" class="btn" aria-label="Rent BOOK2">Rent Now</a>
+            </div>
+            <div class="box">
+                <img src="images/alchemist.jpg" alt="Cover of BOOK3">
+                <h3>BOOK3</h3>
+                <p>By: Author Name</p>
+                <p>Cost: ₹1000</p>
+                <a href="#" class="btn" aria-label="Order BOOK3">Order Now</a>
+                <a href="#" class="btn" aria-label="Rent BOOK3">Rent Now</a>
+            </div>
+            <div class="box">
+                <img src="images/young girl.jpeg" alt="Cover of BOOK4">
+                <h3>BOOK4</h3>
+                <p>By: Author Name</p>
+                <p>Cost: ₹1000</p>
+                <a href="#" class="btn" aria-label="Order BOOK4">Order Now</a>
+                <a href="#" class="btn" aria-label="Rent BOOK4">Rent Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currently Reading Section -->
+    <section id="currently-reading" class="currently-reading">
+        <header class="heading">
+            <h2>Currently Reading</h2>
+        </header>
+        <br>
+        <div class="CR-container">
+            <div class="box">
+                <img src="images/atomic habits.jpeg" alt="Currently reading book">
+                <h3>Atomic Habits</h3>
+                <a href="#" class="btn">Chapter 4</a>
+            </div>
+            <div class="box">
+                <img src="images/law of attraction.jpeg" alt="Currently reading book">
+                <h3>Law of attraction</h3>
+                <a href="#" class="btn">Chapter 10</a>
+            </div>
+            <div class="box">
+                <img src="images/ikigai.jpeg" alt="Currently reading book">
+                <h3>Ikigai</h3>
+                <a href="#" class="btn">Chapter 12</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BMart. All rights reserved.</p>
+        <nav>
+            <a href="/about">About</a> | 
+            <a href="/contact">Contact</a> | 
+            <a href="/privacy-policy">Privacy Policy</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
